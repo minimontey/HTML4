@@ -2,29 +2,166 @@
 <html>
 <head>
 <meta charset="utf-8"
-	  name="viewport" content="width=device-width, initial-scale=1.0">
+	  name="viewport" 
+	  content="width=device-width, initial-scale=1.0">
 	
 <title>Home</title>
-	<style>
-		.wrapper{
-			display:grid;
-			grid-template-columns: 70% 30%;
-		}
-		.wrapper > div{
-			background: #eee;
-			padding: 1em;
-		}
-		.wrapper > div:nth-child(odd){
-			background:#ddd
-		}
-	</style>
+<style>
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-family: neue-aachen-pro,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 35px;
+}
+
+/* The grid container */
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  text-align: center;
+  font-family: neue-aachen-pro,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+  text-align: center;
+  font-family: neue-aachen-pro,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+  text-align: center;
+  font-family: neue-aachen-pro,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  font-family: neue-aachen-pro,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .wrapper  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+</style>
 </head>
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/cul6rcy.css">
 <body>
-	<div class="wrapper">
-		<div> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, cum.
-		</div>
-		<div> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, cum.
-		</div>
-	</div>
+	
+<div class="wrapper">
+  <div class="header">
+    <h3>Animated Japanese Movies To Watch</h3>
+  </div>
+  <div class="left" style="background-color:#aaa;">
+	  <a href="https://www.imdb.com/title/tt11958344/">
+	  <img src="images/awhiskeraway.jpg" alt="A Whisker Away" title=" A Whisker Away (2020) PC: imdb.com">
+	  </a>
+	  <p><b>A Whisker Away (2020)</b></p>
+	  <blockquote cite="https://www.imdb.com/title/tt11958344/">
+	  Miyo Sasaki is in love with her classmate Kento Hinode and tries repeatedly to get Kento's attention by transforming into a cat, but at some point, the boundary between herself and the cat becomes ambiguous.
+	  </blockquote>
+	  <p><b>Directed By</b><br>
+		 Junichi Sato<br>
+		 Tomotaka Shibayama<br>
+		 <b>Writing Credits</b><br>
+		 Mari Okada
+	  </p>
+	  <h3>Trailer</h3>
+	  <iframe width="420" height="315"
+	  src="https://www.youtube.com/embed/aXc9DVfLTGo">
+	  </iframe>
+  </div>
+  <div class="middle" style="background-color:#bbb;">
+	  <a href="https://www.imdb.com/title/tt5323662/">
+	  <img src="images/asilentvoice.jpg" alt="A Silent Voice" title=" A Silent Voice (2017) PC: imdb.com">
+	  </a>
+	  <p><b>A Silent Voice (2017)</b></p>
+	  <blockquote cite="https://www.imdb.com/title/tt5323662/">
+	  A young man is ostracized by his classmates after he bullies a deaf girl to the point where she moves away. Years later, he sets off on a path for redemption.
+	  </blockquote>
+	  <p><b>Directed By</b><br>
+		 Naoko Yamada<br>
+		 <b>Writing Credits</b><br>
+		 Yoshitoki Oima<br>
+		 Reiko Yoshida<br>
+		 Kiyoshi Shigematsu
+	  </p>
+	  <h3>Trailer</h3>
+	  <iframe width="420" height="315"
+	  src="https://www.youtube.com/embed/nfK6UgLra7g">
+	  </iframe>
+  </div>  
+  <div class="right" style="background-color:#ccc;">
+	  <a href="https://www.imdb.com/title/tt9426210/?ref_=nv_sr_srsg_0">
+	  <img src="images/weatheringwithyou.jpg" alt="Weathering With You" title=" Weathering with You (2019) PC: imdb.com">
+	  </a>
+	  <p><b>Weathering with You</b></p>
+	  <blockquote cite="https://www.imdb.com/title/tt9426210/?ref_=nv_sr_srsg_0">
+	  A high-school boy who has run away to Tokyo befriends a girl who appears to be able to manipulate the weather.
+	  </blockquote>
+	  <p><b>Directed By</b><br>
+		 Makoto Shinkai<br>
+		 <b>Writing Credits</b><br>
+		 Makoto Shinkai<br><br><br><br>
+	  </p>
+	  <h3>Trailer</h3>
+	  <iframe width="420" height="315"
+	  src="https://www.youtube.com/embed/Q6iK6DjV_iE">
+	  </iframe>
+  </div>
+  <div class="footer">
+  <p>Created By Maria Montemayor</p>
+  </div>
+</div>
 </body>
 </html>
