@@ -5,83 +5,67 @@
 	  name="viewport" 
 	  content="width=device-width, initial-scale=1.0">
 	
-<title>Home</title>
+<title>Japanese Animated Movies To Watch</title>
 <style>
 {
   box-sizing: border-box;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
 .header {
   grid-area: header;
-  background-color: #f1f1f1;
+  background-color: black;
   padding: 30px;
   text-align: center;
   font-family: neue-aachen-pro,sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 35px;
+  color: antiquewhite
 }
 
-/* The grid container */
 .wrapper {
   display: grid;
   grid-template-areas: 
     'header header header header header header' 
     'left left middle middle right right' 
     'footer footer footer footer footer footer';
-  /* grid-column-gap: 10px; - if you want gap between the columns */
 } 
 
 .left,
 .middle,
 .right {
   padding: 10px;
+  background-color: black;
+  text-align: center;
+  font-family: neue-aachen-pro,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:antiquewhite
 }
 
-/* Style the left column */
 .left {
   grid-area: left;
-  text-align: center;
-  font-family: neue-aachen-pro,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+ 
 }
 
-/* Style the middle column */
 .middle {
   grid-area: middle;
-  text-align: center;
-  font-family: neue-aachen-pro,sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
-/* Style the right column */
 .right {
   grid-area: right;
-  text-align: center;
-  font-family: neue-aachen-pro,sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
-/* Style the footer */
 .footer {
   grid-area: footer;
-  background-color: #f1f1f1;
+  background-color: black;
   padding: 10px;
   text-align: center;
   font-family: neue-aachen-pro,sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: antiquewhite
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   .wrapper  {
     grid-template-areas: 
@@ -99,9 +83,9 @@ body {
 <body>	
 <div class="wrapper">
   <div class="header">
-    <h3>Animated Japanese Movies To Watch</h3>
+    <h3>Japanese Animated Movies To Watch</h3>
   </div>
-  <div class="left" style="background-color:#bbb;">
+  <div class="left">
 	  <a href="https://www.imdb.com/title/tt11958344/">
 	  <img src="images/awhiskeraway.jpg" alt="A Whisker Away" title=" A Whisker Away (2020) PC: imdb.com">
 	  </a>
@@ -120,7 +104,7 @@ body {
 	  src="https://www.youtube.com/embed/aXc9DVfLTGo">
 	  </iframe>
   </div>
-  <div class="middle" style="background-color:#aaa;">
+  <div class="middle">
 	  <a href="https://www.imdb.com/title/tt5323662/">
 	  <img src="images/asilentvoice.jpg" alt="A Silent Voice" title=" A Silent Voice (2017) PC: imdb.com">
 	  </a>
@@ -140,7 +124,7 @@ body {
 	  src="https://www.youtube.com/embed/nfK6UgLra7g">
 	  </iframe>
   </div>  
-  <div class="right" style="background-color:#bbb;">
+  <div class="right">
 	  <a href="https://www.imdb.com/title/tt9426210/?ref_=nv_sr_srsg_0">
 	  <img src="images/weatheringwithyou.jpg" alt="Weathering With You" title=" Weathering with You (2019) PC: imdb.com">
 	  </a>
